@@ -1,0 +1,158 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+header{
+    height: 100%;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1000;
+    margin: 0px;
+}
+
+.skill h2 span{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #EA2027;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+/* about section styles */
+.heading{
+    color: #2d3436;
+    line-height: 80px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about p{
+    text-align: justify;
+    color: #636e72;
+}
+
+/* Education Styles */
+.education{
+    padding: 30px 0 130px 0;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Section styles */
+.my-skills h1{
+    font-size: 50px;
+}
+
+.my-skills h5{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    color: #fff;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Projects Section Styles */
+.tab{
+    flex-direction: column;
+}
+
+.active{
+    background-color: #2980b9;
+}
+
+.active a{
+    color: #fff;
+}
+.project{
+    height: 300px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #3741fa5e;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+.card:hover .overlay{
+    transform: scale(1);
+}
+
+/* Contact Section Styles */
+
+.contact{
+    padding: 150px;
+}
+
+.social-icon i{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 40px;
+    margin-right: 20px;
+    transition: .3s ease;
+}
+
+.social-icon i:hover{
+    transform: scale(1.2);
+}
+
+/* Media Query */
+@media only screen and (max-width: 668px) {
+    .intro h1{
+        font-size: 28px;
+    }
+    .intro h2{
+        font-size: 22px;
+    }
+    .intro h2 span{
+        font-size: 24px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+
+    .intro h1{
+        font-size: 24px;
+    }
+    .intro h2{
+        font-size: 16px;
+    }
+    .intro h2 span{
+        font-size: 20px;
+    }
+}
